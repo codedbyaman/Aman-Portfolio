@@ -1,0 +1,99 @@
+[
+  {
+    "id": "programming",
+    "name": "Programming Languages",
+    "icon": "FaCode",
+    "color": "#00E5FF",
+    "skills": [
+      { "name": "Java", "level": 90 },
+      { "name": "Kotlin", "level": 80 },
+      { "name": "Swift", "level": 90 },
+      { "name": "JavaScript", "level": 65 },
+      { "name": "Bash/Shell", "level": 68 }
+    ]
+  },
+  {
+    "id": "automation-testing",
+    "name": "Automation Testing",
+    "icon": "FaRobot",
+    "color": "#8B5CF6",
+    "skills": [
+      { "name": "Appium", "level": 95 },
+      { "name": "XCUITest", "level": 88 },
+      { "name": "Espresso", "level": 88 },
+      { "name": "Selenium WebDriver", "level": 85 },
+      { "name": "Rest Assured", "level": 85 },
+      { "name": "XCTest", "level": 82 }
+    ]
+  },
+  {
+    "id": "mobile-testing",
+    "name": "Mobile Testing",
+    "icon": "FaMobileAlt",
+    "color": "#22D3EE",
+    "skills": [
+      { "name": "iOS Testing", "level": 90 },
+      { "name": "Android Testing", "level": 90 },
+      { "name": "API Testing", "level": 88 },
+      { "name": "Accessibility Testing", "level": 82 },
+      { "name": "Performance Testing", "level": 75 },
+      { "name": "A/B Test Validation", "level": 80 }
+    ]
+  },
+  {
+    "id": "frameworks",
+    "name": "Frameworks & Tools",
+    "icon": "FaLayerGroup",
+    "color": "#F472B6",
+    "skills": [
+      { "name": "Page Object Model", "level": 92 },
+      { "name": "TestNG", "level": 85 },
+      { "name": "JUnit", "level": 83 },
+      { "name": "Postman", "level": 85 },
+      { "name": "JIRA", "level": 90 },
+      { "name": "TestRail", "level": 82 }
+    ]
+  },
+  {
+    "id": "cicd",
+    "name": "CI/CD & DevOps",
+    "icon": "FaInfinity",
+    "color": "#4ADE80",
+    "skills": [
+      { "name": "Jenkins", "level": 88 },
+      { "name": "GitHub Actions", "level": 85 },
+      { "name": "Fastlane", "level": 75 },
+      { "name": "Git", "level": 88 },
+      { "name": "Docker", "level": 65 },
+      { "name": "Xcode Cloud", "level": 72 }
+    ]
+  },
+  {
+    "id": "ai-tools",
+    "name": "AI Tools",
+    "icon": "FaBrain",
+    "color": "#A78BFA",
+    "skills": [
+      { "name": "GitHub Copilot", "level": 90 },
+      { "name": "Claude AI", "level": 90 },
+      { "name": "ChatGPT", "level": 88 },
+      { "name": "Cursor AI", "level": 85 },
+      { "name": "Gemini", "level": 80 },
+      { "name": "LLM-Assisted QA", "level": 82 }
+    ]
+  },
+  {
+    "id": "cloud",
+    "name": "Cloud & Platforms",
+    "icon": "FaCloud",
+    "color": "#60A5FA",
+    "skills": [
+      { "name": "BrowserStack", "level": 85 },
+      { "name": "Sauce Labs", "level": 78 },
+      { "name": "Firebase Test Lab", "level": 75 },
+      { "name": "AWS Device Farm", "level": 70 },
+      { "name": "TestFlight", "level": 82 },
+      { "name": "Android Emulator", "level": 88 }
+    ]
+  }
+]

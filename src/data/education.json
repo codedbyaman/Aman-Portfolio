@@ -1,0 +1,24 @@
+[
+  {
+    "id": "edu-1",
+    "degree": "Master of Business Administration (MBA)",
+    "status": "Pursuing",
+    "institution": "NMIMS, School of Business Management",
+    "shortInstitution": "NMIMS",
+    "duration": "2024 – Present",
+    "location": "India",
+    "relevantAreas": ["Strategy", "Leadership", "Operations Management", "Business Analytics"],
+    "color": "#8B5CF6"
+  },
+  {
+    "id": "edu-2",
+    "degree": "Bachelor of Computer Applications (BCA)",
+    "status": "Completed",
+    "institution": "Jiwaji University, Gwalior",
+    "shortInstitution": "Jiwaji University",
+    "duration": "2011 – 2014",
+    "location": "Gwalior, India",
+    "relevantAreas": ["Software Engineering", "Database Management Systems", "Computer Networks", "Object-Oriented Programming"],
+    "color": "#00E5FF"
+  }
+]

@@ -1,0 +1,79 @@
+{
+  "client": "Kroger Technology",
+  "clientTagline": "America's Largest Supermarket Retailer",
+  "engagement": "ZopSmart Technologies Pvt. Ltd.",
+  "duration": "July 2021 – Present",
+  "location": "USA (Remote Engagement)",
+  "overview": "Supporting Kroger Technology's quality engineering (QA) initiatives as part of ZopSmart's engineering team. Contributing to multiple customer-facing iOS and Android applications serving millions of shoppers across the United States — ensuring high-quality, reliable, and accessible experiences at enterprise scale.",
+  "stats": [
+    { "value": "5+", "label": "Years of Engagement", "icon": "⚡" },
+    { "value": "3", "label": "Core Platforms", "icon": "📱" },
+    { "value": "50M+", "label": "Shoppers Impacted", "icon": "🛒" },
+    { "value": "1000+", "label": "Tests Automated", "icon": "🤖" }
+  ],
+  "projects": [
+    {
+      "id": "search",
+      "name": "Search Platform",
+      "fullName": "Kroger Search Experience",
+      "icon": "FaSearch",
+      "color": "#00E5FF",
+      "badge": "Core Platform",
+      "overview": "Automated the end-to-end search experience for Kroger's iOS and Android applications — one of the highest-traffic features used by millions of shoppers daily to discover and purchase products.",
+      "scope": [
+        "Predictive Search & typeahead suggestions automation",
+        "Search Results page — product grid, relevancy, pagination",
+        "Visual Navigation & category browse flows",
+        "Sort & Filter panel — all filter combinations and state persistence",
+        "Search Analytics event verification and tracking validation",
+        "A/B testing experiment validation and feature flag support",
+        "Zero-results and error-state handling coverage",
+        "Cross-platform parity testing (iOS vs Android)"
+      ],
+      "impact": "Automated regression coverage for Kroger's most critical discovery feature, enabling confident weekly releases with zero manual regression.",
+      "technologies": ["Appium", "XCUITest", "Espresso", "Java", "Kotlin", "Swift", "Rest Assured", "GitHub Actions"]
+    },
+    {
+      "id": "account",
+      "name": "Account & Auth",
+      "fullName": "Account & Customer Experience",
+      "icon": "FaUserShield",
+      "color": "#8B5CF6",
+      "badge": "Security Critical",
+      "overview": "Validated secure, seamless customer authentication and account management flows across iOS and Android — critical paths that gate every personalised Kroger shopping experience.",
+      "scope": [
+        "Login & Registration flow automation (email, social, SSO)",
+        "Multi-factor authentication (MFA) validation",
+        "Password reset and account recovery journeys",
+        "User profile management and preference updates",
+        "Session management and token refresh testing",
+        "API and UI integration testing for backend-driven experiences",
+        "Cross-platform authentication parity validation",
+        "Security-sensitive flow regression coverage"
+      ],
+      "impact": "Ensured zero-regression on authentication flows across all major Kroger app releases, protecting millions of customer accounts.",
+      "technologies": ["Appium", "XCUITest", "Espresso", "Rest Assured", "Java", "Swift", "Jenkins", "Postman"]
+    },
+    {
+      "id": "shopping-list",
+      "name": "Shopping List",
+      "fullName": "Shopping List & Personalization",
+      "icon": "FaListAlt",
+      "color": "#22D3EE",
+      "badge": "High Engagement",
+      "overview": "Automated the Shopping List platform — Kroger's personalised shopping companion used by millions of customers to plan, manage, and fulfil their weekly grocery runs across all channels.",
+      "scope": [
+        "Shopping List creation, naming, and management workflows",
+        "Add, edit, remove, and reorder items automation",
+        "Item quantity, unit, and note field validation",
+        "List synchronisation across devices and platforms",
+        "AI-powered item recommendations and suggestions",
+        "Cross-device user experience consistency validation",
+        "Backend API integration and data persistence testing",
+        "Customer engagement feature regression coverage"
+      ],
+      "impact": "Delivered full automation coverage for Kroger's most-used engagement feature, reducing manual QA effort and improving release cadence.",
+      "technologies": ["Appium", "XCUITest", "Espresso", "Java", "Kotlin", "Swift", "Rest Assured", "GitHub Actions"]
+    }
+  ]
+}

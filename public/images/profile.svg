@@ -1,0 +1,294 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <!-- Filters -->
+    <filter id="glow-cyan" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b1"/>
+      <feGaussianBlur stdDeviation="10" result="b2"/>
+      <feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-purple" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-eye" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Gradients -->
+    <radialGradient id="bg-grad" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#0D1626"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+    <radialGradient id="face-grad" cx="45%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#8B98AA"/>
+      <stop offset="55%" stop-color="#6B7A8D"/>
+      <stop offset="100%" stop-color="#4A5568"/>
+    </radialGradient>
+    <linearGradient id="hair-main" x1="30%" y1="0%" x2="70%" y2="100%">
+      <stop offset="0%" stop-color="#9CA3AF"/>
+      <stop offset="45%" stop-color="#6B7280"/>
+      <stop offset="100%" stop-color="#374151"/>
+    </linearGradient>
+    <linearGradient id="hair-dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4B5563"/>
+      <stop offset="100%" stop-color="#1F2937"/>
+    </linearGradient>
+    <linearGradient id="jacket-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1A2744"/>
+      <stop offset="100%" stop-color="#0A0F1E"/>
+    </linearGradient>
+    <radialGradient id="iris-l" cx="35%" cy="28%" r="65%">
+      <stop offset="0%" stop-color="#7FF4FF"/>
+      <stop offset="45%" stop-color="#00C4D9"/>
+      <stop offset="100%" stop-color="#0369A1"/>
+    </radialGradient>
+    <radialGradient id="iris-r" cx="35%" cy="28%" r="65%">
+      <stop offset="0%" stop-color="#7FF4FF"/>
+      <stop offset="45%" stop-color="#00C4D9"/>
+      <stop offset="100%" stop-color="#0369A1"/>
+    </radialGradient>
+    <linearGradient id="neck-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7A8796"/>
+      <stop offset="100%" stop-color="#5A6878"/>
+    </linearGradient>
+
+    <!-- Clip paths -->
+    <clipPath id="circle-clip"><circle cx="200" cy="200" r="193"/></clipPath>
+  </defs>
+
+  <!-- ─── BACKGROUND ─── -->
+  <circle cx="200" cy="200" r="200" fill="url(#bg-grad)"/>
+
+  <!-- Subtle cyber grid -->
+  <g stroke="#00E5FF" stroke-width="0.4" opacity="0.04">
+    <line x1="0" y1="66" x2="400" y2="66"/><line x1="0" y1="133" x2="400" y2="133"/>
+    <line x1="0" y1="200" x2="400" y2="200"/><line x1="0" y1="266" x2="400" y2="266"/>
+    <line x1="0" y1="333" x2="400" y2="333"/>
+    <line x1="66" y1="0" x2="66" y2="400"/><line x1="133" y1="0" x2="133" y2="400"/>
+    <line x1="200" y1="0" x2="200" y2="400"/><line x1="266" y1="0" x2="266" y2="400"/>
+    <line x1="333" y1="0" x2="333" y2="400"/>
+  </g>
+
+  <!-- ─── CLIPPED CHARACTER ─── -->
+  <g clip-path="url(#circle-clip)">
+
+    <!-- JACKET / BODY -->
+    <path d="M 30 420 L 30 338 C 30 315 75 303 118 315 L 165 330 C 178 335 190 340 200 340 C 210 340 222 335 235 330 L 282 315 C 325 303 370 315 370 338 L 370 420 Z"
+          fill="url(#jacket-grad)"/>
+
+    <!-- Jacket lapels -->
+    <path d="M 165 330 L 185 360 L 200 342 L 215 360 L 235 330 C 222 335 210 340 200 340 C 190 340 178 335 165 330 Z"
+          fill="#0D1626"/>
+
+    <!-- Neon collar trim left -->
+    <line x1="165" y1="330" x2="185" y2="360" stroke="#00E5FF" stroke-width="1.5" opacity="0.65" stroke-linecap="round" filter="url(#glow-soft)"/>
+    <!-- Neon collar trim right -->
+    <line x1="235" y1="330" x2="215" y2="360" stroke="#00E5FF" stroke-width="1.5" opacity="0.65" stroke-linecap="round" filter="url(#glow-soft)"/>
+
+    <!-- Jacket center seam -->
+    <line x1="200" y1="342" x2="200" y2="420" stroke="#141E30" stroke-width="2.5"/>
+
+    <!-- Jacket circuit details L -->
+    <g stroke="#00E5FF" stroke-width="0.9" fill="none" opacity="0.22">
+      <line x1="85" y1="360" x2="130" y2="360"/>
+      <line x1="130" y1="360" x2="130" y2="378"/>
+      <circle cx="130" cy="378" r="3.5" fill="#00E5FF"/>
+      <line x1="85" y1="360" x2="85" y2="372"/>
+      <line x1="85" y1="372" x2="78" y2="372"/>
+    </g>
+    <!-- Jacket circuit details R -->
+    <g stroke="#8B5CF6" stroke-width="0.9" fill="none" opacity="0.22">
+      <line x1="315" y1="360" x2="270" y2="360"/>
+      <line x1="270" y1="360" x2="270" y2="378"/>
+      <circle cx="270" cy="378" r="3.5" fill="#8B5CF6"/>
+      <line x1="315" y1="360" x2="315" y2="372"/>
+      <line x1="315" y1="372" x2="322" y2="372"/>
+    </g>
+
+    <!-- NECK -->
+    <path d="M 178 318 Q 200 326 222 318 L 222 338 Q 200 345 178 338 Z" fill="url(#neck-grad)"/>
+    <path d="M 178 318 Q 200 323 222 318" fill="none" stroke="#4A5568" stroke-width="1" opacity="0.5"/>
+
+    <!-- HAIR — back layer -->
+    <path d="M 112 168 C 95 188 88 215 90 248 C 91 275 96 298 108 316 L 135 314 C 122 296 116 272 114 248 C 111 218 117 192 126 170 Z"
+          fill="#374151"/>
+    <path d="M 288 168 C 305 188 312 215 310 248 C 309 275 304 298 292 316 L 265 314 C 278 296 284 272 286 248 C 289 218 283 192 274 170 Z"
+          fill="#374151"/>
+
+    <!-- FACE / HEAD -->
+    <ellipse cx="200" cy="210" rx="87" ry="104" fill="url(#face-grad)"/>
+
+    <!-- Ear left -->
+    <ellipse cx="114" cy="213" rx="13" ry="17" fill="#6B7A8D"/>
+    <ellipse cx="114" cy="213" rx="8" ry="12" fill="#566070"/>
+    <path d="M 108 207 Q 112 213 108 219" fill="none" stroke="#4A5568" stroke-width="1.2" stroke-linecap="round"/>
+    <!-- Ear right -->
+    <ellipse cx="286" cy="213" rx="13" ry="17" fill="#6B7A8D"/>
+    <ellipse cx="286" cy="213" rx="8" ry="12" fill="#566070"/>
+    <path d="M 292 207 Q 288 213 292 219" fill="none" stroke="#4A5568" stroke-width="1.2" stroke-linecap="round"/>
+
+    <!-- HAIR — top dome -->
+    <path d="M 118 162 C 116 120 134 88 160 77 C 174 71 187 69 200 69 C 213 69 226 71 240 77 C 266 88 284 120 282 162 C 268 155 248 150 230 150 C 215 149 207 151 200 152 C 193 151 185 149 170 150 C 152 150 132 155 118 162 Z"
+          fill="url(#hair-main)"/>
+
+    <!-- Hair spike — centre -->
+    <path d="M 192 100 C 190 82 193 65 200 54 C 207 65 210 82 208 100 C 205 94 200 91 195 94 Z"
+          fill="#9CA3AF"/>
+    <!-- Hair spike — left -->
+    <path d="M 148 118 C 143 102 145 88 153 78 C 157 88 156 103 158 118 Z"
+          fill="#6B7280"/>
+    <!-- Hair spike — right -->
+    <path d="M 252 118 C 257 102 255 88 247 78 C 243 88 244 103 242 118 Z"
+          fill="#6B7280"/>
+    <!-- Hair spike far-left -->
+    <path d="M 127 138 C 122 124 126 110 133 100 C 135 112 133 126 136 140 Z"
+          fill="#4B5563"/>
+    <!-- Hair spike far-right -->
+    <path d="M 273 138 C 278 124 274 110 267 100 C 265 112 267 126 264 140 Z"
+          fill="#4B5563"/>
+
+    <!-- Hair highlight sheen -->
+    <path d="M 154 84 C 164 77 178 73 188 75 C 180 79 168 83 160 90 Z"
+          fill="#E5E7EB" opacity="0.4"/>
+    <path d="M 200 58 C 204 62 206 70 205 78 C 202 73 198 73 195 78 C 194 70 196 62 200 58 Z"
+          fill="#E5E7EB" opacity="0.35"/>
+    <path d="M 148 110 C 144 100 143 90 147 84 C 150 91 150 103 151 112 Z"
+          fill="#E5E7EB" opacity="0.2"/>
+
+    <!-- Front fringe strands -->
+    <path d="M 140 138 C 137 148 136 158 138 166 C 143 159 145 150 144 140 Z" fill="#4B5563"/>
+    <path d="M 155 130 C 152 142 151 154 154 163 C 158 155 159 144 158 133 Z" fill="#6B7280"/>
+    <path d="M 246 130 C 249 142 249 154 246 163 C 242 155 241 144 242 133 Z" fill="#6B7280"/>
+    <path d="M 261 138 C 264 148 264 158 262 166 C 257 159 255 150 256 140 Z" fill="#4B5563"/>
+
+    <!-- Side hair strands -->
+    <path d="M 118 162 C 112 178 108 200 110 226 C 105 204 103 180 107 160 Z" fill="#374151"/>
+    <path d="M 282 162 C 288 178 292 200 290 226 C 295 204 297 180 293 160 Z" fill="#374151"/>
+
+    <!-- ─── FACIAL FEATURES ─── -->
+
+    <!-- EYEBROWS — sharp anime style -->
+    <path d="M 135 182 C 146 174 162 172 176 175 C 166 176 152 178 140 185 Z"
+          fill="#2D3748"/>
+    <path d="M 265 182 C 254 174 238 172 224 175 C 234 176 248 178 260 185 Z"
+          fill="#2D3748"/>
+
+    <!-- LEFT EYE -->
+    <!-- Eye white -->
+    <ellipse cx="160" cy="202" rx="27" ry="20" fill="#DDE6EF"/>
+    <!-- Iris -->
+    <circle cx="160" cy="202" r="15.5" fill="url(#iris-l)"/>
+    <!-- Iris neon glow -->
+    <circle cx="160" cy="202" r="15.5" fill="#00C4D9" opacity="0.25" filter="url(#glow-eye)"/>
+    <!-- Pupil -->
+    <circle cx="160" cy="202" r="8.5" fill="#050A14"/>
+    <!-- Catchlight main -->
+    <ellipse cx="154" cy="196" rx="4.5" ry="3.5" fill="white" opacity="0.9"/>
+    <!-- Catchlight small -->
+    <circle cx="167" cy="208" r="2" fill="white" opacity="0.45"/>
+    <!-- Iris rim -->
+    <circle cx="160" cy="202" r="15.5" fill="none" stroke="#00E5FF" stroke-width="0.8" opacity="0.5"/>
+    <!-- Upper eyelid -->
+    <path d="M 133 197 C 141 186 153 183 160 183 C 167 183 176 186 187 197"
+          fill="none" stroke="#1A2030" stroke-width="4.5" stroke-linecap="round"/>
+    <!-- Eyelash tips -->
+    <line x1="134" y1="197" x2="130" y2="192" stroke="#1A2030" stroke-width="2" stroke-linecap="round"/>
+    <line x1="140" y1="191" x2="137" y2="186" stroke="#1A2030" stroke-width="1.8" stroke-linecap="round"/>
+    <line x1="186" y1="197" x2="189" y2="193" stroke="#1A2030" stroke-width="1.8" stroke-linecap="round"/>
+    <!-- Lower lid -->
+    <path d="M 134 208 C 143 215 154 218 160 218 C 166 218 175 215 186 208"
+          fill="none" stroke="#2D3748" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+
+    <!-- RIGHT EYE -->
+    <ellipse cx="240" cy="202" rx="27" ry="20" fill="#DDE6EF"/>
+    <circle cx="240" cy="202" r="15.5" fill="url(#iris-r)"/>
+    <circle cx="240" cy="202" r="15.5" fill="#00C4D9" opacity="0.25" filter="url(#glow-eye)"/>
+    <circle cx="240" cy="202" r="8.5" fill="#050A14"/>
+    <ellipse cx="234" cy="196" rx="4.5" ry="3.5" fill="white" opacity="0.9"/>
+    <circle cx="247" cy="208" r="2" fill="white" opacity="0.45"/>
+    <circle cx="240" cy="202" r="15.5" fill="none" stroke="#00E5FF" stroke-width="0.8" opacity="0.5"/>
+    <path d="M 213 197 C 221 186 233 183 240 183 C 247 183 256 186 267 197"
+          fill="none" stroke="#1A2030" stroke-width="4.5" stroke-linecap="round"/>
+    <line x1="214" y1="197" x2="211" y2="192" stroke="#1A2030" stroke-width="1.8" stroke-linecap="round"/>
+    <line x1="260" y1="191" x2="263" y2="186" stroke="#1A2030" stroke-width="1.8" stroke-linecap="round"/>
+    <line x1="266" y1="197" x2="270" y2="193" stroke="#1A2030" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 214 208 C 223 215 234 218 240 218 C 246 218 255 215 266 208"
+          fill="none" stroke="#2D3748" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+
+    <!-- NOSE — minimal anime -->
+    <path d="M 196 245 C 196 252 200 256 204 252"
+          fill="none" stroke="#56687A" stroke-width="2" stroke-linecap="round"/>
+    <!-- Nose shadow hint -->
+    <ellipse cx="200" cy="254" rx="7" ry="3" fill="#4A5568" opacity="0.18"/>
+
+    <!-- MOUTH — subtle anime smile -->
+    <path d="M 182 272 C 190 281 210 281 218 272"
+          fill="none" stroke="#4A5568" stroke-width="2.2" stroke-linecap="round"/>
+    <!-- Lower lip hint -->
+    <path d="M 187 275 C 194 280 206 280 213 275"
+          fill="#5A6878" opacity="0.2"/>
+
+    <!-- Face subtle highlight -->
+    <ellipse cx="173" cy="188" rx="16" ry="22" fill="white" opacity="0.035"/>
+
+    <!-- ─── CYBERPUNK NEON ACCENTS ─── -->
+    <!-- Under-eye marks (anime style) -->
+    <line x1="138" y1="220" x2="152" y2="222" stroke="#00E5FF" stroke-width="1.5" opacity="0.45" stroke-linecap="round" filter="url(#glow-soft)"/>
+    <line x1="262" y1="220" x2="248" y2="222" stroke="#00E5FF" stroke-width="1.5" opacity="0.45" stroke-linecap="round" filter="url(#glow-soft)"/>
+
+    <!-- Temple circuit left -->
+    <g stroke="#8B5CF6" stroke-width="0.9" fill="none" opacity="0.28" filter="url(#glow-soft)">
+      <line x1="118" y1="197" x2="130" y2="197"/>
+      <line x1="130" y1="197" x2="130" y2="189"/>
+      <line x1="130" y1="189" x2="137" y2="189"/>
+      <circle cx="137" cy="189" r="2" fill="#8B5CF6" opacity="0.6"/>
+    </g>
+    <!-- Temple circuit right -->
+    <g stroke="#8B5CF6" stroke-width="0.9" fill="none" opacity="0.28" filter="url(#glow-soft)">
+      <line x1="282" y1="197" x2="270" y2="197"/>
+      <line x1="270" y1="197" x2="270" y2="189"/>
+      <line x1="270" y1="189" x2="263" y2="189"/>
+      <circle cx="263" cy="189" r="2" fill="#8B5CF6" opacity="0.6"/>
+    </g>
+
+    <!-- Forehead scan line accent -->
+    <line x1="170" y1="155" x2="230" y2="155" stroke="#00E5FF" stroke-width="0.6" opacity="0.12"/>
+
+  </g>
+
+  <!-- ─── OUTER DECORATIVE FRAME ─── -->
+
+  <!-- Ring glow -->
+  <circle cx="200" cy="200" r="193" fill="none" stroke="#00E5FF" stroke-width="8" opacity="0.07" filter="url(#glow-cyan)"/>
+  <!-- Ring sharp inner -->
+  <circle cx="200" cy="200" r="193" fill="none" stroke="#00E5FF" stroke-width="1" opacity="0.55"/>
+  <!-- Ring purple accent -->
+  <circle cx="200" cy="200" r="187" fill="none" stroke="#8B5CF6" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- Corner bracket TL -->
+  <g stroke="#00E5FF" stroke-width="1.2" fill="none" opacity="0.4">
+    <line x1="42" y1="42" x2="72" y2="42"/><line x1="42" y1="42" x2="42" y2="72"/>
+    <circle cx="42" cy="42" r="2.5" fill="#00E5FF"/>
+  </g>
+  <!-- Corner bracket TR -->
+  <g stroke="#00E5FF" stroke-width="1.2" fill="none" opacity="0.4">
+    <line x1="358" y1="42" x2="328" y2="42"/><line x1="358" y1="42" x2="358" y2="72"/>
+    <circle cx="358" cy="42" r="2.5" fill="#00E5FF"/>
+  </g>
+  <!-- Corner bracket BL -->
+  <g stroke="#8B5CF6" stroke-width="1.2" fill="none" opacity="0.4">
+    <line x1="42" y1="358" x2="72" y2="358"/><line x1="42" y1="358" x2="42" y2="328"/>
+    <circle cx="42" cy="358" r="2.5" fill="#8B5CF6"/>
+  </g>
+  <!-- Corner bracket BR -->
+  <g stroke="#8B5CF6" stroke-width="1.2" fill="none" opacity="0.4">
+    <line x1="358" y1="358" x2="328" y2="358"/><line x1="358" y1="358" x2="358" y2="328"/>
+    <circle cx="358" cy="358" r="2.5" fill="#8B5CF6"/>
+  </g>
+
+</svg>

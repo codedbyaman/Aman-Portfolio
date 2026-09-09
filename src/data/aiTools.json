@@ -1,0 +1,92 @@
+[
+  {
+    "id": "ai-1",
+    "name": "GitHub Copilot",
+    "tagline": "AI pair programmer",
+    "description": "Uses GitHub Copilot daily to accelerate test code authoring, generate boilerplate, and get context-aware suggestions while writing Swift XCUITest code.",
+    "icon": "SiGithub",
+    "color": "#6B7280",
+    "category": "Code Generation",
+    "useCases": [
+      "XCUITest boilerplate generation",
+      "Swift syntax acceleration",
+      "Refactoring suggestions",
+      "Comment-to-code generation"
+    ]
+  },
+  {
+    "id": "ai-2",
+    "name": "Claude AI",
+    "tagline": "Advanced reasoning assistant",
+    "description": "Leverages Claude for complex problem-solving, architecture reviews, test strategy planning, and generating comprehensive test documentation.",
+    "icon": "SiAnthropic",
+    "color": "#D97706",
+    "category": "Analysis & Strategy",
+    "useCases": [
+      "Test strategy & planning",
+      "Code review assistance",
+      "Bug analysis & root cause",
+      "Documentation generation"
+    ]
+  },
+  {
+    "id": "ai-3",
+    "name": "ChatGPT",
+    "tagline": "Versatile AI assistant",
+    "description": "Uses ChatGPT for quick lookups, generating test ideas from requirements, explaining complex concepts, and drafting test plans and reports.",
+    "icon": "SiOpenai",
+    "color": "#10B981",
+    "category": "Productivity",
+    "useCases": [
+      "Test case idea generation",
+      "Requirements analysis",
+      "Quick API reference",
+      "Report & email drafting"
+    ]
+  },
+  {
+    "id": "ai-4",
+    "name": "Cursor AI",
+    "tagline": "AI-first code editor",
+    "description": "Uses Cursor as the primary IDE for AI-assisted development. The codebase-aware AI understands project context and generates highly relevant test code.",
+    "icon": "FaCode",
+    "color": "#8B5CF6",
+    "category": "Code Generation",
+    "useCases": [
+      "Codebase-aware test generation",
+      "Multi-file refactoring",
+      "Natural language to code",
+      "Intelligent autocomplete"
+    ]
+  },
+  {
+    "id": "ai-5",
+    "name": "Google Gemini",
+    "tagline": "Multimodal AI assistant",
+    "description": "Uses Gemini for multimodal tasks including analyzing UI screenshots to generate accessibility test assertions and understanding design specs.",
+    "icon": "SiGoogle",
+    "color": "#3B82F6",
+    "category": "Multimodal AI",
+    "useCases": [
+      "UI screenshot analysis",
+      "Design-to-test conversion",
+      "Accessibility audit from visuals",
+      "Research & exploration"
+    ]
+  },
+  {
+    "id": "ai-6",
+    "name": "AI Test Generation Pipeline",
+    "tagline": "Custom AI workflow",
+    "description": "Built a custom pipeline that connects Jira → GPT-4 → Swift code to auto-generate XCUITest test skeletons from acceptance criteria.",
+    "icon": "FaRobot",
+    "color": "#F472B6",
+    "category": "Custom Workflow",
+    "useCases": [
+      "Jira → test case generation",
+      "Acceptance criteria parsing",
+      "XCUITest skeleton generation",
+      "40% reduction in authoring time"
+    ]
+  }
+]

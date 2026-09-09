@@ -1,0 +1,30 @@
+[
+  {
+    "id": "cert-1",
+    "name": "ISTQB Certified Tester — Foundation Level",
+    "issuer": "ISTQB",
+    "issuerLogo": "",
+    "date": "",
+    "expiryDate": "",
+    "status": "In Progress",
+    "credentialId": "",
+    "credentialUrl": "https://www.istqb.org",
+    "image": "",
+    "skills": ["Software Testing", "Test Design", "Test Management", "Agile Testing"],
+    "color": "#00E5FF"
+  },
+  {
+    "id": "cert-2",
+    "name": "Certified Agile Tester (CAT)",
+    "issuer": "iSQI",
+    "issuerLogo": "",
+    "date": "",
+    "expiryDate": "",
+    "status": "In Progress",
+    "credentialId": "",
+    "credentialUrl": "https://www.isqi.org",
+    "image": "",
+    "skills": ["Agile", "Scrum", "BDD", "TDD", "Continuous Testing"],
+    "color": "#8B5CF6"
+  }
+]

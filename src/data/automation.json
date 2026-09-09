@@ -1,0 +1,86 @@
+[
+  {
+    "id": "auto-1",
+    "title": "Appium — iOS & Android",
+    "description": "Expert-level proficiency in Appium for cross-platform mobile automation. Builds scalable, maintainable test suites for native iOS and Android applications at enterprise scale.",
+    "icon": "FaMobileAlt",
+    "color": "#00E5FF",
+    "features": [
+      "Native iOS and Android UI automation",
+      "Cross-platform test strategy design",
+      "Real device and simulator/emulator testing",
+      "Parallel execution across device farms",
+      "Deep link and push notification testing"
+    ]
+  },
+  {
+    "id": "auto-2",
+    "title": "XCUITest — iOS Native",
+    "description": "Native iOS automation using XCUITest and Swift. Delivers fast, reliable UI tests deeply integrated with Xcode and iOS tooling for maximum stability.",
+    "icon": "SiXcode",
+    "color": "#8B5CF6",
+    "features": [
+      "Swift-based native iOS test suites",
+      "Accessibility identifier strategy",
+      "Snapshot and UI state validation",
+      "Xcode Cloud and CI/CD integration",
+      "Performance and memory profiling"
+    ]
+  },
+  {
+    "id": "auto-3",
+    "title": "Espresso — Android Native",
+    "description": "Android-native UI automation using Espresso and Kotlin/Java. Enables fast, flake-resistant tests running directly within the Android instrumentation framework.",
+    "icon": "FaAndroid",
+    "color": "#4ADE80",
+    "features": [
+      "Kotlin/Java Android instrumentation tests",
+      "Idling resources for async operations",
+      "Intent testing and deep link validation",
+      "ViewMatcher and DataInteraction patterns",
+      "Integration with Google device farm"
+    ]
+  },
+  {
+    "id": "auto-4",
+    "title": "Web Automation — Selenium",
+    "description": "End-to-end web test automation using Selenium WebDriver with Java. Builds robust, cross-browser test suites following Page Object Model patterns for reliable web quality coverage.",
+    "icon": "FaGlobe",
+    "color": "#F59E0B",
+    "features": [
+      "Cross-browser testing (Chrome, Firefox, Safari)",
+      "Java + TestNG / JUnit test frameworks",
+      "Page Object Model and component design",
+      "Headless execution for CI/CD pipelines",
+      "Data-driven and parameterized test suites"
+    ]
+  },
+  {
+    "id": "auto-5a",
+    "title": "API Automation — Rest Assured",
+    "description": "Comprehensive API test suites using Rest Assured for validating backend services driving iOS and Android mobile experiences including Search, Shopping, and Account APIs.",
+    "icon": "FaNetworkWired",
+    "color": "#22D3EE",
+    "features": [
+      "REST API contract and schema validation",
+      "Authentication and session management",
+      "Data-driven parameterized tests",
+      "Response payload and header validation",
+      "Integration with mobile end-to-end flows"
+    ]
+  },
+  {
+    "id": "auto-5",
+    "title": "CI/CD Integration",
+    "description": "Integrates automation suites into Jenkins and GitHub Actions pipelines for continuous quality feedback on every commit, PR, and release candidate.",
+    "icon": "FaInfinity",
+    "color": "#F472B6",
+    "features": [
+      "Jenkins pipeline design and maintenance",
+      "GitHub Actions workflow automation",
+      "Parallel mobile test execution",
+      "Allure and HTML report generation",
+      "Slack and PR notification integration"
+    ]
+  }
+]

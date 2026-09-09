@@ -1,0 +1,96 @@
+[
+  {
+    "id": "exp-1",
+    "company": "ZopSmart Technologies Pvt. Ltd.",
+    "clientNote": "Client: Kroger Technology (USA)",
+    "logo": "",
+    "role": "Senior Software Development Engineer in Test (SSDET)",
+    "duration": "July 2021 – Present",
+    "location": "Bengaluru, India",
+    "type": "Full-time",
+    "description": "Leading quality engineering and test automation initiatives for Kroger's large-scale retail ecosystem across iOS and Android platforms. Contributing to multiple customer-facing mobile applications and features used by millions of shoppers.",
+    "responsibilities": [
+      "Designed, developed, and maintained scalable automation frameworks for iOS and Android applications using Appium, XCUITest, Espresso, Java, Kotlin, and Swift",
+      "Built and executed end-to-end automation suites for critical customer journeys — improving regression coverage and release confidence",
+      "Automated UI, API, and integration test scenarios using Rest Assured, reducing manual testing efforts and accelerating release cycles",
+      "Collaborated closely with Product Managers, Developers, Business Analysts, and QA teams in Agile/Scrum environments",
+      "Integrated automated test suites into CI/CD pipelines using Jenkins and GitHub Actions for continuous quality validation",
+      "Conducted accessibility, functional, regression, smoke, and end-to-end testing across multiple mobile platforms",
+      "Participated in sprint planning, requirement reviews, defect triage, production validation, and release sign-off activities",
+      "Mentored team members on automation best practices, framework design, and mobile testing strategies"
+    ],
+    "awards": [
+      {
+        "name": "Pivot Polaris Prize",
+        "description": "Recognised as Best Performer at ZopSmart Technologies — awarded for outstanding contribution to quality engineering and delivery excellence."
+      }
+    ],
+    "achievements": [
+      "5+ years supporting Kroger Technology initiatives across multiple iOS and Android teams",
+      "Automated critical customer journeys used by millions of retail customers across the USA",
+      "Built and maintained scalable mobile automation frameworks supporting enterprise applications",
+      "Leveraged AI-assisted tools and LLMs for test case generation, automation development, and QA documentation"
+    ],
+    "technologies": ["Appium", "XCUITest", "Espresso", "Java", "Kotlin", "Swift", "Selenium WebDriver", "Rest Assured", "Jenkins", "GitHub Actions"],
+    "initiatives": [
+      {
+        "name": "Kroger Search Platform",
+        "description": "Automated Predictive Search, Search Suggestions, Search Results, Visual Navigation, Sort & Filter, and Product Discovery workflows. Validated analytics tracking, A/B testing experiments, and search performance across iOS and Android."
+      },
+      {
+        "name": "Shopping List & Personalization",
+        "description": "Automated Shopping List creation, management, item updates, synchronization, and user engagement workflows. Validated cross-platform user experiences and backend integrations."
+      },
+      {
+        "name": "Account & Customer Experience",
+        "description": "Automated Login, Registration, Authentication, Profile Management, and Customer Preference features. Performed API and UI validation for secure customer-facing experiences."
+      },
+      {
+        "name": "Accessibility & Quality Initiatives",
+        "description": "Introduced accessibility validation practices into testing workflows. Automated accessibility checks for customer-facing mobile experiences supporting inclusive digital products."
+      }
+    ]
+  },
+  {
+    "id": "exp-2",
+    "company": "Zn Retail (ZopNow)",
+    "clientNote": "",
+    "logo": "",
+    "role": "System Engineer",
+    "duration": "July 2016 – June 2020",
+    "location": "Bengaluru, India",
+    "type": "Full-time",
+    "description": "Supported application operations, system maintenance, and deployment activities for an e-commerce retail platform.",
+    "responsibilities": [
+      "Supported application operations, system maintenance, and deployment activities",
+      "Collaborated with engineering and QA teams to ensure stable application releases",
+      "Assisted in troubleshooting production issues and validating software quality across environments",
+      "Contributed to process improvements for deployment and release management"
+    ],
+    "achievements": [
+      "Gained foundational expertise in e-commerce application quality and operations",
+      "Supported multiple successful product releases across development environments"
+    ],
+    "technologies": ["System Administration", "Application Deployment", "QA Validation", "Troubleshooting"]
+  },
+  {
+    "id": "exp-3",
+    "company": "Moonlander E-Commerce",
+    "clientNote": "",
+    "logo": "",
+    "role": "System Administrator",
+    "duration": "June 2015 – June 2016",
+    "location": "India",
+    "type": "Full-time",
+    "description": "Managed IT infrastructure, system administration, and technical support activities for an e-commerce organization.",
+    "responsibilities": [
+      "Managed IT infrastructure, system administration, and technical support activities",
+      "Supported deployment processes and environment maintenance for development and QA teams",
+      "Provided technical support for internal teams and maintained system stability"
+    ],
+    "achievements": [
+      "Maintained high system uptime supporting business-critical e-commerce operations"
+    ],
+    "technologies": ["System Administration", "IT Infrastructure", "Technical Support", "Environment Management"]
+  }
+]

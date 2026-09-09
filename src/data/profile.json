@@ -1,0 +1,28 @@
+{
+  "name": "Aman Kumar",
+  "title": "Senior Software Development Engineer in Test",
+  "subtitles": [
+    "Test Engineer Expert",
+    "iOS · Android · Web · API Automation",
+    "Kroger Technology | ZopSmart",
+    "Appium · XCUITest · Espresso · Selenium",
+    "AI-Powered QA Engineering"
+  ],
+  "bio": "Senior SDET with 5+ years of experience in quality engineering (QA) for large-scale retail platforms. Supporting Kroger Technology across iOS, Android, Web, and API automation used by millions of shoppers.",
+  "location": "Bengaluru, India",
+  "email": "theamansingh.ak@gmail.com",
+  "phone": "+91 8269543620",
+  "linkedin": "https://www.linkedin.com/in/aman-kumar-2a809753/",
+  "github": "https://github.com/codedbyaman",
+  "twitter": "",
+  "resume": "/resume",
+  "avatar": "/images/profile.png",
+  "stats": {
+    "yearsOfExperience": 5,
+    "projectsCompleted": 10,
+    "testsAutomated": "1000+",
+    "companiesWorked": 3
+  },
+  "aboutText": "Senior Software Development Engineer in Test (SSDET) with 5+ years of experience in Quality Engineering (QA), specializing in iOS, Android, Web, and API test automation for large-scale retail and e-commerce applications. Currently supporting Kroger Technology through ZopSmart, contributing to multiple high-impact initiatives including Search, Shopping List, Account Management, and Customer Experience platforms.\n\nExperienced in designing and maintaining scalable automation frameworks using Appium, XCUITest, Espresso, Selenium WebDriver, and Rest Assured. Skilled in end-to-end testing, API automation, accessibility validation, CI/CD integration, and Agile delivery practices.\n\nPassionate about modern Quality Engineering — leveraging AI-assisted testing, intelligent test generation, and automation-first approaches to improve software quality, accelerate releases, and enhance team productivity.",
+  "availability": "Open to opportunities"
+}
