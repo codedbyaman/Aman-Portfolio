@@ -7,6 +7,7 @@ import { MdLocationOn } from 'react-icons/md';
 import { scrollToSection } from '@/lib/utils';
 import NeonButton from './ui/NeonButton';
 import profile from '@/data/profile.json';
+import Image from 'next/image';
 
 // Floating orb component
 function FloatingOrb({ color, size, x, y, delay }: { color: string; size: string; x: string; y: string; delay: number }) {
@@ -78,10 +79,11 @@ export default function Hero() {
 
             {/* Avatar container */}
             <div className="relative w-44 h-44 sm:w-52 sm:h-52 lg:w-64 lg:h-64 rounded-full overflow-hidden border-2 border-dark-200 bg-dark-200 flex items-center justify-center">
-              <img
+              <Image
                 src={profile.avatar}
                 alt={profile.name}
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
               />
               {/* Fallback initials avatar (hidden — shown only if SVG path wrong) */}
               <div className="absolute inset-0 items-center justify-center hidden">
@@ -189,7 +191,7 @@ export default function Hero() {
               transition={{ delay: 0.6 }}
               className="flex flex-wrap gap-3 mb-8 justify-center lg:justify-start"
             >
-              <NeonButton href="/api/resume" download variant="primary" size="lg">
+              <NeonButton href="/resume.pdf" download variant="primary" size="lg">
                 <FaDownload />
                 Download Resume
               </NeonButton>

@@ -48,7 +48,7 @@ export default function Resume() {
                 View Resume
               </NeonButton>
               <NeonButton
-                href="/api/resume"
+                href="/resume.pdf"
                 download
                 variant="primary"
                 size="sm"
@@ -92,7 +92,7 @@ export default function Resume() {
               </div>
 
               <div className="flex flex-wrap gap-3 justify-center">
-                <NeonButton href="/api/resume" download variant="primary" size="md">
+                <NeonButton href="/resume.pdf" download variant="primary" size="md">
                   <FaDownload />
                   Download PDF Resume
                 </NeonButton>
