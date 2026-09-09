@@ -6,6 +6,8 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import { scrollToSection } from '@/lib/utils';
 import profile from '@/data/profile.json';
 
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 const navItems = [
   { label: 'Home', href: 'home' },
   { label: 'About', href: 'about' },
@@ -112,7 +114,7 @@ export default function Navbar() {
           {/* CTA + Mobile toggle */}
           <div className="flex items-center gap-3">
             <a
-              href="/resume.pdf"
+              href={`${BASE_PATH}/resume.pdf`}
               download="Aman-Kumar-Resume.pdf"
               className="hidden sm:inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-lg border border-neon-cyan/40 text-neon-cyan hover:bg-neon-cyan/10 hover:border-neon-cyan hover:shadow-neon-cyan transition-all duration-300"
             >
@@ -164,7 +166,7 @@ export default function Navbar() {
               ))}
             </ul>
             <a
-              href="/resume.pdf"
+              href={`${BASE_PATH}/resume.pdf`}
               download="Aman-Kumar-Resume.pdf"
               className="mt-4 inline-flex justify-center items-center gap-2 px-4 py-3 text-sm font-medium rounded-lg border border-neon-cyan/40 text-neon-cyan hover:bg-neon-cyan/10 transition-all duration-300"
             >

@@ -191,7 +191,7 @@ export default function Hero() {
               transition={{ delay: 0.6 }}
               className="flex flex-wrap gap-3 mb-8 justify-center lg:justify-start"
             >
-              <NeonButton href="/resume.pdf" download variant="primary" size="lg">
+              <NeonButton href={`${BASE_PATH}/resume.pdf`} download variant="primary" size="lg">
                 <FaDownload />
                 Download Resume
               </NeonButton>

@@ -7,6 +7,8 @@ import SectionTitle from './ui/SectionTitle';
 import NeonButton from './ui/NeonButton';
 import profile from '@/data/profile.json';
 
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 export default function Resume() {
   return (
     <section id="resume" className="py-24 relative">
@@ -38,7 +40,7 @@ export default function Resume() {
             </div>
             <div className="flex gap-3">
               <NeonButton
-                href="/resume"
+                href={`${BASE_PATH}/resume/`}
                 target="_blank"
                 rel="noopener noreferrer"
                 variant="outline"
@@ -48,7 +50,7 @@ export default function Resume() {
                 View Resume
               </NeonButton>
               <NeonButton
-                href="/resume.pdf"
+                href={`${BASE_PATH}/resume.pdf`}
                 download
                 variant="primary"
                 size="sm"
@@ -92,7 +94,7 @@ export default function Resume() {
               </div>
 
               <div className="flex flex-wrap gap-3 justify-center">
-                <NeonButton href="/resume.pdf" download variant="primary" size="md">
+                <NeonButton href={`${BASE_PATH}/resume.pdf`} download variant="primary" size="md">
                   <FaDownload />
                   Download PDF Resume
                 </NeonButton>
